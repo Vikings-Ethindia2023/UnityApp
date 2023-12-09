@@ -6,6 +6,7 @@
 
 	public class ImmediatePositionWithLocationProvider : MonoBehaviour
 	{
+		public bool stop = false;
 
 		bool _isInitialized;
 
@@ -32,11 +33,20 @@
 
 		void LateUpdate()
 		{
+			if (stop)
+			{
+				return;
+			}
 			if (_isInitialized)
 			{
 				var map = LocationProviderFactory.Instance.mapManager;
 				transform.localPosition = map.GeoToWorldPosition(LocationProvider.CurrentLocation.LatitudeLongitude);
 			}
 		}
+		public void StopUpdating()
+		{
+			stop = true;
+		}
 	}
+
 }

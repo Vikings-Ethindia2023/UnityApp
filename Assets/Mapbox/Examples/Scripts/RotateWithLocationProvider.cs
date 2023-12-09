@@ -31,6 +31,7 @@ namespace Mapbox.Examples
 		/// </summary>
 		[SerializeField]
 		bool _rotateZ;
+		public bool stop = false;
 
 		/// <summary>
 		/// <para>Set this to true if you'd like to adjust the sign of the rotation angle.</para>
@@ -158,7 +159,17 @@ namespace Mapbox.Examples
 
 		void Update()
 		{
+			if (stop)
+			{
+				return;
+			}
 			transform.localRotation = Quaternion.Lerp(transform.localRotation, _targetRotation, Time.deltaTime * _rotationFollowFactor);
 		}
+		public void StopUpdate()
+		{
+
+			stop = true;
+		}
+
 	}
 }

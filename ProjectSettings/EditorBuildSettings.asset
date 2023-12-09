@@ -4,7 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Mapbox/Examples/0_PrefabScenes/Location-basedGame.unity
+    guid: 42f6aa7ce7a604f16ade319663f46ceb
+  - enabled: 1
+    path: Assets/MetaMask/Samples/Main/Scenes/MetaMask Main (Sample).unity
+    guid: ca0505b2cc25d9343a2ee46407aa8970
   m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a6c7937c978974253b9e4cc23f26c22a,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: befb04750a3d544fca5d0596db03d2b9, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: aa3834d9e48ff48d6af3a1040ecb5537, type: 2}
