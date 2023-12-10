@@ -101,6 +101,11 @@ Library: lib_burst_generated
 --compilation-defines=NET_STANDARD_2_1
 --compilation-defines=NETSTANDARD
 --compilation-defines=NETSTANDARD2_1
+--compilation-defines=DEVELOPMENT_BUILD
+--compilation-defines=ENABLE_PROFILER
+--compilation-defines=DEBUG
+--compilation-defines=TRACE
+--compilation-defines=UNITY_ASSERTIONS
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
 --compilation-defines=ENABLE_LOCALIZATION
@@ -127,6 +132,7 @@ Library: lib_burst_generated
 --compilation-defines=TIMELINE_FRAMEACCURATE
 --compilation-defines=ENABLE_SPRITESHAPE_BURST
 --generate-link-xml=Temp/burst.link.xml
+--debug=Full
 --output=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/tempburstlibs/armeabi-v7a/lib_burst_generated
 --root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll
 --root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/Unity.AdaptivePerformance.dll
@@ -153,6 +159,8 @@ Library: lib_burst_generated
 --root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/MetaMask.NativeWebSocket.dll
 --root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/MetaMask.Runtime.dll
 --root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/Unity.AdaptivePerformance.Samsung.Android.dll
+--root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/Unity.Recorder.dll
+--root-assembly=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/Unity.Recorder.Base.dll
 --assembly-folder=/Users/notanshuman/Projects/ethindia2023/App Tracker/Temp/StagingArea/Data/Managed/
 --pdb-search-paths=Temp/ManagedSymbols/
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
